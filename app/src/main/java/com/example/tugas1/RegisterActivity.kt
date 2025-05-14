@@ -1,8 +1,9 @@
+//Jonathan Aditya Vandra 672022006
+//Tugas 1 Pemrograman Mobile
+
 package com.example.tugas1
 
 import android.os.Bundle
-import android.text.method.HideReturnsTransformationMethod
-import android.text.method.PasswordTransformationMethod
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tugas1.databinding.ActivityRegisterBinding
