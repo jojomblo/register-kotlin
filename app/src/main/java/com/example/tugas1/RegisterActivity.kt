@@ -2,7 +2,7 @@
 //Tugas 1 Pemrograman Mobile
 
 package com.example.tugas1
-
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -34,11 +34,13 @@ class RegisterActivity : AppCompatActivity() {
             }
 
             Toast.makeText(this, "Registration Successful", Toast.LENGTH_SHORT).show()
-            binding.etFullName.text?.clear()
-            binding.etUsername.text?.clear()
-            binding.etPassword.text?.clear()
-            binding.etConfirmPassword.text?.clear()
 
+            val intent = Intent(this, LoginActivity::class.java)
+            intent.putExtra("username", username)
+            intent.putExtra("password", password)
+            intent.putExtra("name", fullName)
+            startActivity(intent)
+            finish()
         }
 
     }

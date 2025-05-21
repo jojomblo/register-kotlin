@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--Jonathan Aditya Vandra 672022006-->
-<!--Tugas 1 Pemrograman Mobile-->
+<!--Tugas 2 Pemrograman Mobile-->
 
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -25,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="Create Account"
+            android:text="Login"
             android:textColor="#263238"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -34,30 +35,6 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Full Name"
-            app:boxBackgroundMode="outline"
-            app:boxCornerRadiusBottomEnd="8dp"
-            app:boxCornerRadiusBottomStart="8dp"
-            app:boxCornerRadiusTopEnd="8dp"
-            app:boxCornerRadiusTopStart="8dp"
-            app:boxStrokeColor="#7B1FA2"
-            app:boxStrokeErrorColor="#E53935"
-            app:boxStrokeWidth="2dp"
-            app:boxStrokeWidthFocused="2dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etFullName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:textColor="#263238" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:hint="Username"
             app:boxBackgroundMode="outline"
             app:boxCornerRadiusBottomEnd="8dp"
@@ -101,38 +78,13 @@
                 android:textColor="#263238" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:hint="Confirm Password"
-            app:boxBackgroundMode="outline"
-            app:boxCornerRadiusBottomEnd="8dp"
-            app:boxCornerRadiusBottomStart="8dp"
-            app:boxCornerRadiusTopEnd="8dp"
-            app:boxCornerRadiusTopStart="8dp"
-            app:boxStrokeColor="#7B1FA2"
-            app:boxStrokeWidth="2dp"
-            app:boxStrokeWidthFocused="2dp"
-            app:endIconMode="password_toggle"
-            app:endIconTint="#7B1FA2">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etConfirmPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:textColor="#263238" />
-        </com.google.android.material.textfield.TextInputLayout>
-
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnRegister"
+            android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_marginTop="24dp"
             android:backgroundTint="#7B1FA2"
-            android:text="REGISTER"
+            android:text="LOGIN"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
@@ -148,7 +100,7 @@
             android:clickable="true"
             android:focusable="true"
             android:gravity="center"
-            android:text="Already have an account? Sign in"
+            android:text="Don't have an account? Register"
             android:textColor="#7B1FA2"
             android:textSize="14sp" />
     </LinearLayout>
